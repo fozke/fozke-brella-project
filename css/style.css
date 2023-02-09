@@ -1,10 +1,9 @@
 html, body {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway" , sans-serif;
   color: #214E41;
 }
 
 .header {
-  padding-bottom: 200px;
 }
 
 .wrapper {
@@ -20,7 +19,9 @@ html, body {
   width: 100%;
 }
 
-.brella {}
+.brella {
+  margin-top: 210px;
+}
 
 .brings {
   margin-top: 120px;
@@ -190,8 +191,7 @@ html, body {
 
 .header__content {
   position: absolute;
-  top: 50%;
-  text-transform: uppercase;
+  top: 35%;
 }
 
 .header__text {
@@ -373,26 +373,26 @@ html, body {
   margin-bottom: 0px;
 }
 
-.brings__link-item::after {
-  position: absolute;
-  content: "";
-  top: 10px;
-  right: 150px;
-  width: 24.4px;
-  height: 18.19px;
-  background: url("/image/right.svg") no-repeat;
-}
-
 .brings__link {
   font-family: Roboto;
   font-size: 32px;
   line-height: 42px;
   color: #43806C;
   transition: all .4s;
+  margin-right: 25px;
 }
 
 .brings__link:hover {
   color: #214E41;
+}
+
+.brings__link-arrow{
+  opacity: 0;
+  transition: all .4s;
+}
+
+.brings__link-item:hover .brings__link-arrow{
+  opacity: 1;
 }
 
 .right_bgc {
@@ -483,11 +483,18 @@ html, body {
 }
 
 .row-k__title {
-  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #F0A446;
+}
+
+.row-k__title-k{
+  display: flex;
+  align-items: center;
 }
 
 .row-k__text {
@@ -567,6 +574,7 @@ html, body {
 
 .emp {
   background-image: url("/image/employers.svg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -575,7 +583,8 @@ html, body {
 .emp__info {
   font-weight: 700;
   font-size: 18px;
-  padding: 200px 0px 300px 0px;
+  padding: 200px 0px 300px;
+  
 }
 
 .emp__subtitle {
@@ -753,6 +762,7 @@ html, body {
 .explore__img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .explore__right {
